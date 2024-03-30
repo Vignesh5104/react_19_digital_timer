@@ -1,0 +1,243 @@
+/* Write your CSS here */
+.bgcon {
+  background-image: linear-gradient(to bottom, #ffffff, #cffcf1, #defafe);
+  text-align: center;
+  padding: 40px 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .bgcon {
+    background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
+  }
+}
+
+.main-head {
+  font-size: 25px;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .main-head {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-head {
+    font-size: 35px;
+  }
+}
+
+.card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    flex-direction: row;
+    width: 70%;
+  }
+}
+
+.img-con {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  width: 300px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .img-con {
+    height: 380px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .img-con {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.timer-con {
+  background-color: #defafe;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-con {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+  }
+}
+
+.timer {
+  color: #00d9f5;
+  font-size: 25px;
+  margin: 0;
+}
+
+.timer-status {
+  color: #1e293b;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+}
+
+.set-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .timer {
+    font-size: 30px;
+  }
+  .timer-status {
+    font-size: 20px;
+  }
+
+  .set-con {
+    align-self: center;
+  }
+}
+
+.start-reset-con {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  .start-reset-con {
+    order: 0;
+  }
+
+  .limit-text {
+    order: 1;
+  }
+
+  .inc-dec-con {
+    order: 2;
+  }
+}
+
+.start-btn {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 34px;
+  height: 34px;
+  margin-top: 5px;
+}
+
+.start-con {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width:768px){
+  .start-con{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.start-icon {
+  width: 100%;
+}
+
+.start-text {
+  color: #1e293b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.limit-text {
+  color: #1e293b;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.inc-dec-con {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inc-btn {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 34px;
+  height: 34px;
+  font-size: 35px;
+  color: #0f172a;
+  margin: 0px 15px;
+}
+
+.limit-con {
+  background-image: linear-gradient(to right, #00f5a0, #00d9f5);
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.limit {
+  font-size: 30px;
+  color: #0f172a;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .start-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .start-text {
+    font-size: 25px;
+  }
+  .limit-text {
+    font-size: 20px;
+  }
+
+  .inc-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .limit-con {
+    width: 130px;
+    height: 50px;
+  }
+  .limit {
+    font-size: 33px;
+  }
+}
